@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Await</title>
+    <style>
+        body{
+            background-color: rgba(62, 55, 109, 0.077);
+        }
+        .row{
+            
+            display: flex;
+            justify-content: space-between;
+            background-color: red;
+        }
+        .row>h1{
+            color: white;
+            
+            font-size: 60px;
+
+        }
+        #menu{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 80%;
+            margin-left: 10%;
+        }
+        .i{
+            height: 400px;
+            width: 80%;
+        }
+        h4,h3{
+            text-align: center;
+
+        }
+        .order{
+            margin-left: 40%;
+            height: 50px;
+            width: 80px;
+        }
+        #sai{
+            color: rgb(127, 25, 25);
+            font-size: 50px;
+        }
+        #det{
+            display: none;
+            padding-top: 3%;
+            border-radius: 20px;
+            background-color: rgb(114, 34, 34);
+            position: fixed;
+            margin-left: 30%;
+            width: 40%;
+        color: white;
+        }
+    #det>*{
+       
+    padding-left: 20%;
+
+    }
+    #close{
+      
+        color:white;
+        width: 100%;
+       background-color: black;
+        height: 40px;
+        font-size: 30px;
+    }
+    .order{
+        margin-top: 20px;
+        font-size: 34px;
+        font-weight: 500;
+        background-color: red;
+        color: white;
+        margin-left:30%;
+        width: 40%;
+        height: 50px;
+    }
+    .o{
+margin: 0;
+
+        position: fixed;
+color: white;
+      
+       
+        width: max-content;
+        height: max-content;
+       
+    }
+   #fl{
+       border-radius: 5px;
+       position: absolute;
+       
+       position: fixed;
+      font-size: 25px;
+      background-color: inherit;
+   
+   }
+   #hide{
+       display: none;
+   }
+   #jack:hover #hide{
+       border-radius: 5px;
+       border: 1px black solid;
+       margin-left: 150px;
+    position: relative;
+    background-color: rgb(77, 65, 207);
+       display: block;
+   }
+    </style>
+</head>
+<body>
+    <div class="o" id="fl"><a  id='jack'style="text-decoration: none; color: white;" href="https://www.linkedin.com/in/naseeb-khan-deenshah">Deen Shah Scion
+        <span id="hide">Contact on linkedin </span></a> </div>
+    <div id="det"></div>
+    
+        <div class="row">
+ 
+        <img  src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
+          <h1> McDonald's    </h1>
+          <img src="http://logok.org/wp-content/uploads/2014/06/McDonalds-logo.png" alt="Mcdlogo" width="200px" height="160px">
+        </div>
+        
+<h3 id="sai">Select Food</h3>
+<div id="menu">
+
+</div>
+<button class="order" onclick="order()">Place Order</button>
+
+
+
+
+
+
+</body>
+
+<script src="./promis.js"></script>
+</html>
